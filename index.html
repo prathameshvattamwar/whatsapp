@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whats App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="show()">
+    
+
+    <div class="container">
+        <!-- wapp box start -->
+        <div class="whatsapp-box">
+
+            <div class="header">
+                <div class="header-top-content">
+                    <h5>WhatsApp</h5>
+                    <div class="right-top-icons">
+                        <i class="fa-solid fa-camera"  id="update"></i>
+                        <i class="fa-solid fa-magnifying-glass"  id="update"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"  id="update"></i>
+                    </div>
+                </div>
+                <div class="header-bottom-content">
+                    <button id="user"><i class="fa-solid fa-users"></i></button>
+                    <button id="chats" class="active">Chats</button>
+                    <button id="status">Status</button>
+                    <button id="calls">Calls</button>
+                </div>
+            </div>
+
+            <div class="screen">
+
+                <div class="message-box">
+                    <small>msg from: Prathamesh Vattamwar</small>
+                    <small>currently WA is in updating phase.</small>
+                    <small>This button will working very soon</small>
+                    <button class="btn">OK</button>
+                </div>
+
+                <div class="contact-list">
+                    <ul class="userContactList">
+                        <li>
+                            <div class="profile-section">
+                                <img src="Dp/prathamesh.jpeg" alt="profile">
+                            </div>
+                            <div class="contact-section">
+                                <h5><a href="https://prathameshvattamwar.github.io/share" target="_blank">Prathamesh V</a></h5>
+                                <small><span><img width="13" height="13" src="https://img.icons8.com/ios-filled/50/000000/double-tick.png" alt="double-tick"/></span>prathameshpv24</small>
+                            </div>
+                            <div class="msg-counter">
+                                <small class="time">10:00 AM</small>
+                                <small class="count">14</small>
+                            </div>
+                        </li>           
+                        <li>
+                            <div class="profile-section">
+                                <img src="Dp/duddu.jpeg" alt="profile">
+                            </div>
+                            <div class="contact-section">
+                                <h5>Duddu 🐖</h5>
+                                <small><span><img width="13" height="13" src="https://img.icons8.com/ios-filled/50/000000/double-tick.png" alt="double-tick"/></span>😂😂😂😂</small>
+                            </div>
+                            <div class="msg-counter">
+                                <small class="time">typing...</small>
+                                <!-- <small class="count"></small> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile-section">
+                                <img src="Dp/rushi.jpeg" alt="profile">
+                            </div>
+                            <div class="contact-section">
+                                <h5>Rushi More</h5>
+                                <small><span><img width="13" height="13" src="https://img.icons8.com/ios-filled/50/000000/double-tick.png" alt="double-tick"/></span>👍👍</small>
+                            </div>
+                            <div class="msg-counter">
+                                <small class="time">2:45 PM</small>
+                                <small class="count">3</small>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile-section">
+                                <img src="Dp/bhai.jpeg" alt="profile">
+                            </div>
+                            <div class="contact-section">
+                                <h5>Brother ❣️</h5>
+                                <small><span><img width="13" height="13" src="https://img.icons8.com/ios-filled/50/000000/double-tick.png" alt="double-tick"/></span><i class="fa-regular fa-file-pdf"></i></small>
+                            </div>
+                            <div class="msg-counter">
+                                <small class="time">4:10 PM</small>
+                                <small class="count">42</small>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile-section">
+                                <img src="Dp/sunil.jpeg">
+                            </div>
+                            <div class="contact-section">
+                                <h5>Sunil Lendave</h5>
+                                <small><span><img width="13" height="13" src="https://img.icons8.com/ios-filled/50/000000/double-tick.png" alt="double-tick"/></span>ok</small>
+                            </div>
+                            <div class="msg-counter">
+                                <small class="time">5:00 PM</small>
+                                <!-- <small class="count">42</small> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile-section">
+                                <img src="Dp/kunj.jpeg">
+                            </div>
+                            <div class="contact-section">
+                                <h5>Kunj Patel</h5>
+                                <small><span><img width="13" height="13" src="https://img.icons8.com/ios-filled/50/000000/double-tick.png" alt="double-tick"/></span><i class="fa-solid fa-image"></i>&nbsp;more...</small>
+                            </div>
+                            <div class="msg-counter">
+                                <small class="time">yesterday</small>
+                                <small class="count">2</small>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile-section">
+                                <img src="Dp/aai.jpeg">
+                            </div>
+                            <div class="contact-section">
+                                <h5>Aai</h5>
+                                <small><span><img width="13" height="13" src="https://img.icons8.com/ios-filled/50/000000/double-tick.png" alt="double-tick"/></span>👌🏻😀😀</small>
+                            </div>
+                            <div class="msg-counter">
+                                <small class="time">yesterday</small>
+                                <!-- <small class="count">2</small> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile-section">
+                                <img src="Dp/pappa.jpeg">
+                            </div>
+                            <div class="contact-section">
+                                <h5>Pappa</h5>
+                                <small><span><img width="13" height="13" src="https://img.icons8.com/ios-filled/50/000000/double-tick.png" alt="double-tick"/></span>https://confirmtktapp.sng</small>
+                            </div>
+                            <div class="msg-counter">
+                                <small class="time">02/01/2024</small>
+                                <!-- <small class="count">2</small> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile-section">
+                                <img src="Dp/imran.jpeg">
+                            </div>
+                            <div class="contact-section">
+                                <h5>Imran Mogal</h5>
+                                <small><span><img width="13" height="13" src="https://img.icons8.com/ios-filled/50/000000/double-tick.png" alt="double-tick"/></span>Link for Online Session</small>
+                            </div>
+                            <div class="msg-counter">
+                                <small class="time">31/12/2023</small>
+                                <small class="count">1</small>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile-section">
+                                <img src="Dp/ranjit.jpeg">
+                            </div>
+                            <div class="contact-section">
+                                <h5>Ranjit Nagane</h5>
+                                <small><span><img width="13" height="13" src="https://img.icons8.com/ios-filled/50/000000/double-tick.png" alt="double-tick"/></span>stickers</small>
+                            </div>
+                            <div class="msg-counter">
+                                <small class="time">28/12/2023</small>
+                                <small class="count">6</small>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile-section">
+                                <img src="Dp/abya.jpeg">
+                            </div>
+                            <div class="contact-section">
+                                <h5>Ajinkya Nagane</h5>
+                                <small><span><img width="13" height="13" src="https://img.icons8.com/ios-filled/50/000000/double-tick.png" alt="double-tick"/></span>😂🔥❤️💯</small>
+                            </div>
+                            <div class="msg-counter">
+                                <small class="time">27/12/2023</small>
+                                <!-- <small class="count">6</small> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile-section">
+                                <img src="Dp/nitesh.jpeg">
+                            </div>
+                            <div class="contact-section">
+                                <h5>Nitesh Pawar</h5>
+                                <small><span><img width="13" height="13" src="https://img.icons8.com/ios-filled/50/000000/double-tick.png" alt="double-tick"/></span>kk</small>
+                            </div>
+                            <div class="msg-counter">
+                                <small class="time">25/12/2023</small>
+                                <small class="count">1</small>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile-section">
+                                <img src="Dp/dadu.jpeg">
+                            </div>
+                            <div class="contact-section">
+                                <h5> Dadu 👨🏻‍✈️👨🏻‍✈️</h5>
+                                <small><span><img width="13" height="13" src="https://img.icons8.com/ios-filled/50/000000/double-tick.png" alt="double-tick"/></span>🔥🔥🫂🫂❤️</small>
+                            </div>
+                            <div class="msg-counter">
+                                <small class="time">25/12/2023</small>
+                                <small class="count">10</small>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile-section">
+                                <img src="Dp/family.jpeg">
+                            </div>
+                            <div class="contact-section">
+                                <h5> Family </h5>
+                                <small><span><img width="13" height="13" src="https://img.icons8.com/ios-filled/50/000000/double-tick.png" alt="double-tick"/></span>Morning</small>
+                            </div>
+                            <div class="msg-counter">
+                                <small class="time">14/12/2023</small>
+                                <small class="count">35</small>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="chatBtns"  id="update">
+                        <i class="fa fa-commenting"></i>
+                    </button>
+                </div>
+
+                <div class="status-area">
+                    <ul class="status-list">
+                        <li>
+                            <div class="my-status">
+                                <img src="Dp/prathamesh.jpeg" alt="icon">
+                                <i class="fa-solid fa-plus" id="plus" aria-hidden="true"></i>
+                            </div>
+                            <div class="status-contact">
+                                <h5>My status</h5>
+                                <p>Tap to add status update</p>
+                            </div>
+                        </li>
+                        
+                        <p class="recent-txt">recent updates</p>
+                        
+                        <li>
+                            <div class="my-status status" id="duddu">
+                                <img src="Dp/duddu.jpeg" alt="icon">
+                            </div>
+                            <div class="status-contact">
+                                <h5>Duddu 🐖</h5>
+                                <p>Just now</p>
+                            </div>
+                        </li>
+                        <li class="recent-updates">
+                            <div class="my-status status">
+                                <img src="Dp/kunj.jpeg" alt="icon">
+                                </i>
+                            </div>
+                            <div class="status-contact">
+                                <h5>Kunj Patel</h5>
+                                <p>Just now</p>
+                            </div>
+                        </li>
+                        <li class="recent-updates">
+                            <div class="my-status status" id="aai">
+                                <img src="Dp/aai.jpeg" alt="icon">
+                                </i>
+                            </div>
+                            <div class="status-contact">
+                                <h5>Aai</h5>
+                                <p>1 min ago</p>
+                            </div>
+                        </li>
+                        <li class="recent-updates">
+                            <div class="my-status status">
+                                <img src="Dp/abya.jpeg" alt="icon">
+                                </i>
+                            </div>
+                            <div class="status-contact">
+                                <h5>Ajinkya Nagane</h5>
+                                <p>5 min ago</p>
+                            </div>
+                        </li>
+                        <li class="recent-updates">
+                            <div class="my-status status">
+                                <img src="Dp/rushi.jpeg" alt="icon">
+                                </i>
+                            </div>
+                            <div class="status-contact">
+                                <h5>Rushi More</h5>
+                                <p>20 min ago</p>
+                            </div>
+                        </li>
+                        <li class="recent-updates">
+                            <div class="my-status status">
+                                <img src="Dp/sunil.jpeg" alt="icon">
+                                </i>
+                            </div>
+                            <div class="status-contact">
+                                <h5>Sunil Lendave</h5>
+                                <p>22 min ago</p>
+                            </div>
+                        </li>
+                        <li class="recent-updates">
+                            <div class="my-status status">
+                                <img src="Dp/nitesh.jpeg" alt="icon">
+                                </i>
+                            </div>
+                            <div class="status-contact">
+                                <h5>Nitesh Pawar</h5>
+                                <p>35 min ago</p>
+                            </div>
+                        </li>
+                        <li class="recent-updates">
+                            <div class="my-status status">
+                                <img src="Dp/ranjit.jpeg" alt="icon">
+                                </i>
+                            </div>
+                            <div class="status-contact">
+                                <h5>Ranjit Nagane</h5>
+                                <p>45 min ago</p>
+                            </div>
+                        </li>
+                        <li class="recent-updates">
+                            <div class="my-status status">
+                                <img src="Dp/dadu.jpeg" alt="icon">
+                                </i>
+                            </div>
+                            <div class="status-contact">
+                                <h5>Dadu 👨🏻‍✈️👨🏻‍✈️</h5>
+                                <p>1 hr ago</p>
+                            </div>
+                        </li>
+                        <p class="recent-txt">Viewed updates</p>
+                        <li class="viewed-updates">
+                            <div class="my-status view-status">
+                                <img src="Dp/vedant.jpeg" alt="icon">
+                                </i>
+                            </div>
+                            <div class="status-contact">
+                                <h5>Vedant Jadhav</h5>
+                                <p>1 hr ago</p>
+                            </div>
+                        </li>
+                        <li class="viewed-updates">
+                            <div class="my-status view-status">
+                                <img src="Dp/imran.jpeg" alt="icon">
+                                </i>
+                            </div>
+                            <div class="status-contact">
+                                <h5>Imran Mogal</h5>
+                                <p>Today 11:00 AM</p>
+                            </div>
+                        </li>
+                        <li class="viewed-updates">
+                            <div class="my-status view-status">
+                                <img src="Dp/bhai.jpeg" alt="icon">
+                                </i>
+                            </div>
+                            <div class="status-contact">
+                                <h5>Brother ❣️</h5>
+                                <p>Today 1:00 PM</p>
+                            </div>
+                        </li>
+                        <li class="viewed-updates">
+                            <div class="my-status view-status">
+                                <img src="Dp/pappa.jpeg" alt="icon">
+                                </i>
+                            </div>
+                            <div class="status-contact">
+                                <h5>Pappa</h5>
+                                <p>Today 4:45 PM</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="statusBtns1"  id="update">
+                        <i class="fa fa-pencil"></i>
+                    </button>
+                    <button class="statusBtns"  id="update">
+                        <i class="fa fa-camera"></i>
+                    </button>
+                </div>
+
+                <div class="calls-area">
+                    <ul>
+                        <li>
+                            <div class="call-icon"  id="update">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+
+                            <div class="call-link"  id="update">
+                                <h5>Create call link</h5>
+                                <p>Share a link for your whatsapp call</p>
+                            </div>
+                        </li>
+                        <p class="recent">Recent</p>
+                        <li class="vc">
+                            <div class="call-img">
+                                <img src="/Dp/duddu.jpeg" alt="call">
+                            </div>
+                            <div class="call-link">
+                                <h5>Duddu 🐖</h5>
+                                <small><i class="fa-sharp fa-solid fa-arrow-left-long  arrow" style="color: #ff0000;"></i>January 6, 12:08 PM</small>
+                            </div>
+                            <i class="fa-solid fa-video calling-icon" style="color: #00c846;"  id="update"></i>
+                        </li>
+
+                        <li class="vc">
+                            <div class="call-img">
+                                <img src="/Dp/aai.jpeg" alt="call">
+                            </div>
+                            <div class="call-link">
+                                <h5>Aai</h5>
+                                <small><i class="fa-sharp fa-solid fa-arrow-left-long  arrow2" style="color: #00c73c;"></i>January 5, 02:22 PM</small>
+                            </div>
+                            <i class="fa-solid fa-video calling-icon" style="color: #00c846;"  id="update"></i>
+                        </li>
+
+                        <li class="vc">
+                            <div class="call-img">
+                                <img src="/Dp/bhai.jpeg" alt="call">
+                            </div>
+                            <div class="call-link">
+                                <h5>Brother ❣️</h5>
+                                <small><i class="fa-sharp fa-solid fa-arrow-left-long  arrow" style="color: #00c73c;"></i>January 5, 02:22 PM</small>
+                            </div>
+                            <i class="fa-solid fa-phone calling-icon" style="color: #00c73c;"  id="update"></i>
+                        </li>
+
+                        <li class="vc">
+                            <div class="call-img">
+                                <img src="/Dp/imran.jpeg" alt="call">
+                            </div>
+                            <div class="call-link">
+                                <h5>Imran Mogal</h5>
+                                <small><i class="fa-sharp fa-solid fa-arrow-left-long  arrow" style="color: red;"></i>January 5, 02:49 PM</small>
+                            </div>
+                            <i class="fa-solid fa-phone calling-icon" style="color: #00c73c;"  id="update"></i>
+                        </li>
+
+                        <li class="vc">
+                            <div class="call-img">
+                                <img src="/Dp/duddu.jpeg" alt="call">
+                            </div>
+                            <div class="call-link">
+                                <h5>Duddu 🐖</h5>
+                                <small><i class="fa-sharp fa-solid fa-arrow-left-long  arrow" style="color: #ff0000;"></i>January 4, 11:34 AM</small>
+                            </div>
+                            <i class="fa-solid fa-video calling-icon" style="color: #00c846;"  id="update"></i>
+                        </li>
+
+                        <li class="vc">
+                            <div class="call-img">
+                                <img src="/Dp/rushi.jpeg" alt="call">
+                            </div>
+                            <div class="call-link">
+                                <h5>Rushi More</h5>
+                                <small><i class="fa-sharp fa-solid fa-arrow-left-long  arrow" style="color: #00c846;"></i>12/27/23, 10:44 PM</small>
+                            </div>
+                            <i class="fa-solid fa-video calling-icon" style="color: #00c846;"  id="update"></i>
+                        </li>
+
+                        <li class="vc">
+                            <div class="call-img">
+                                <img src="/Dp/dadu.jpeg" alt="call">
+                            </div>
+                            <div class="call-link">
+                                <h5>Dadu 👨🏻‍✈️👨🏻‍✈️</h5>
+                                <small><i class="fa-sharp fa-solid fa-arrow-left-long  arrow2" style="color: #00c73c;"></i>12/24/23, 01:23 PM</small>
+                            </div>
+                            <i class="fa-solid fa-video calling-icon" style="color: #00c846;"  id="update"></i>
+                        </li>
+                    </ul>
+                    <button class="callBtns"  id="update">
+                        <i class="fa-solid fa-phone"></i>
+                    </button>
+                </div>
+
+                <div class="community-area">
+                    <ul>
+                        <li>
+                            <div class="community-icon"  id="update">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </div>
+                            <div class="text-community">
+                                <h5>New community</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>   
+            </div>   
+            
+            <div class="contact-chat-area">
+                <div class="header-contact">
+                    <div class="profile-contact">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <img src="Dp/duddu.jpeg">
+                    </div>
+                    <div class="contact-name">
+                        <h5>Duddu 🐷</h5>
+                        <small>online</small>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical"  id="update"></i>
+                </div>
+
+                <div class="chat-screen">
+                    <div class="chat_">
+                      
+                        <div class="left-chat">Hii</div>
+                        <div class="right-chat">Hello</div>
+                        <div class="left-chat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nihil voluptatem dolorum expedita, consequuntur exercitationem cumque quos necessitatibus in iure.</div>
+                        <div class="right-chat">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, voluptate.</div>
+                        <div class="left-chat">Ok... Lorem, ipsum dolor.🤪</div>
+                        <div class="right-chat">Lorem ipsum dolor sit amet?</div>
+                        <div class="left-chat">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam iusto aliquid dignissimos💯💯</div>
+                        <div class="right-chat">Lorem ipsum dolor sit, amet consectetur adipisicing elit.🤣</div>
+                        <div class="left-chat">😂😂😂😂😂</div>
+                        <div class="right-chat img"><img src="chat/life.png" width="150px" style="border-radius: 10px;"></div>
+                        <div class="left-chat">💯🔥👍</div>
+                        <div class="right-chat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat in explicabo nobis repudiandae harum nesciunt. Lorem ipsum dolor sit.</div>
+                        <div class="left-chat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nesciunt vitae quis!😮😮😮</div>
+                        <div class="right-chat">Lorem ipsum dolor sit amet.</div>
+                        <div class="left-chat">Lorem, ipsum dolor.</div>
+                        <div class="right-chat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consectetur eligendi sed.</div>
+                        <div class="left-chat">Lorem ipsum dolor sit amet consectetur.</div>
+                        <div class="right-chat">consectetur, ipsum.</div>
+                        <div class="left-chat">Lorem ipsum dolor sit amet.</div>
+                        <div class="right-chat">lorem20</div>
+                        <div class="left-chat">Lorem, ipsum dolor. Lorem ipsum dolor sit.</div>
+                        <div class="right-chat">???</div>
+                        <div class="left-chat"><img src="chat/random.jpg" width="150px" style="border-radius: 10px;"></div>
+                        <div class="right-chat">😯😯🤔🤔??</div>
+                        <div class="left-chat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, id. Dolores vel, rem at pariatur dicta neque explicabo maxime error, nesciunt odio culpa? Fuga totam maxime illum asperiores a expedita suscipit amet error, corporis est provident nam optio reiciendis laborum quidem. Esse at alias, aperiam dignissimos vel ipsam quia repudiandae?</div>
+                        <div class="right-chat">Lorem ipsum dolor sit amet.🔥🔥🔥🔥👏👏👏</div>
+                        <div class="left-chat">Lorem, ipsum dolor.😌😌</div>
+                        <div class="right-chat">Lorem ipsum dolor sit amet consectetur, adipisicing elit.💯💯💯❤️🔥</div>
+                        <div class="left-chat"> Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+                        <div class="right-chat">😂😂😂😂</div>
+                        <div class="left-chat">__________</div>
+                        <div class="right-chat">___________</div>
+                    
+                    </div>
+                </div>
+
+                <div class="input">
+                    <i class="fa-regular fa-face-smile"  id="update"></i>
+                    <input type="text" placeholder="Message">
+                    <div class="more-icons">
+                        <i class="fa-solid fa-paperclip"  id="update"></i>
+                        <i class="fa-solid fa-indian-rupee-sign"  id="update"></i>
+                        <i class="fa-solid fa-camera"  id="update"></i>
+                    </div>
+                    <button class="mic"  id="update"><i class="fa-solid fa-microphone"></i></button>
+                </div>
+
+            </div> 
+
+            <div class="contact-status-area">
+                <div class="header-status">
+                    <div class="profile-status">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <img src="Dp/duddu.jpeg">
+                    </div>
+                    <div class="status-contact-name">
+                        <h5>Duddu 🐷</h5>
+                        <small>50 min ago</small>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical"  id="update"></i>
+                </div>
+                <div class="status-screen"></div>
+            </div>
+
+        </div>
+        <!-- wapp box end -->
+    </div>
+
+    <script src="https://kit.fontawesome.com/37df75b44e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- wapp logo : <i class="fa-brands fa-whatsapp" style="color: #4bc95b;"></i> -->
+<!-- users: <i class="fa-solid fa-users"></i> -->
