@@ -117,57 +117,40 @@ body{
 }
 
 .message-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    width: 200px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
     height: 120px;
-    padding: 5px;
-    background-color: #127C7E;
-    border-radius: 20px;
-    transform: translate(75px, 180px);
-    z-index: 9999;
-    box-shadow: 0px 0px 10px 1px #060606b5;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    z-index: 99999;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     display: none;
 }
 
-.message-box small:first-child{
-    text-align: start;
-    text-transform: capitalize;
-    font-size: .6rem;
-    font-weight: bolder;
-    color: #fff;
-    opacity: .9;
+.naam{
+    font-size: 0.7rem;
+    margin-bottom: 5px;
 }
 
-.message-box small:nth-child(3), .message-box small:nth-child(2){
-    text-align: center;
-    margin-top: 5px;
-    color: #fff;
-    opacity: .7;
+.up1, .up2{
     font-size: .7rem;
+    font-weight: bold;
+    color: red;
 }
 
 .message-box button{
-    padding: .6vh 3vw;
-    margin-top: 10px;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    background-color: #d7d7d7;
-    font-weight: 600;
-    /* color: #333; */
-    box-shadow: 3px 3px 5px #00000082;
-    transition: .3s;
-}
-
-.message-box button:active{
-    box-shadow: 0 0 0;
-    background-color: #000;
-    color: #fff;
+    position: fixed;
+    width: 40%;
+    padding: 5px;
+    transform: translate(0, 52px);
 }
 
 /* ------ contact list start -------- */
@@ -770,7 +753,14 @@ body{
     color: #fff;
     font-weight: lighter;
     font-size: 1rem;
+}
 
+.mic i{
+    opacity: 1;
+}
+
+.plane{
+    opacity: 0;
 }
 
 /* --------------------- Contact chat area style end ------------*/
@@ -863,7 +853,7 @@ body{
 
 /* -------------- Media query css ---------------- */
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:480px) and (max-width:600px) {
     .screen{
         height: 560px;
     }
@@ -977,23 +967,39 @@ body{
     }
 
     .message-box{
-        width: 200px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 220px;
         height: 120px;
+        padding: 20px;
+        background-color: #fff;
+        border: 2px solid #000;
+        border-radius: 10px;
+        z-index: 99999;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 3px 3px 10px #000000;
+        display: none;
     }
     
-    .message-box small:first-child{
-        font-size: .7rem;
-        opacity: 1;
+    .naam:first-child{
+        font-size: 0.6rem;
+        margin-bottom: 5px;
     }
     
-    .message-box small:nth-child(3), .message-box small:nth-child(2){
-        margin-top: 5px;
-        opacity: .7;
-        font-size: .9rem;
+    .up1:nth-child(2), .up2:nth-child(3){
+        font-size: .6rem;
+        font-weight: bold;
+        color: red;
     }
     
     .message-box button{
-        padding: 1vh 5vw;
-        margin-top: 10px;
+        width: 50px;
+        position: fixed;
+        padding: 5px;
+        transform: translate(0, 45px);
     }
 }

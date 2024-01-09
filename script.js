@@ -24,7 +24,6 @@ let status_back = document.querySelector('.profile-status .fa-arrow-left');
 let profile_status_img = document.querySelector('.profile-status img');
 let profile_status_name = document.querySelector('.status-contact-name h5');
 
-
 // for status area
 status_list.forEach((element, index)=>{
     element.setAttribute('id', `status_btn${index}`)
@@ -46,10 +45,12 @@ status_back.addEventListener('click',()=>{
 
 // bottom corner icons
 const show=()=>{
+    // alert("msg from:Prathamesh Vattamwar⚠️ Note: This is just prototype WhatsApp application.Currently is in updating phase⚠️ Now click 'OK' to continue")
     chat.style.display = "block";
     draw.style.display = "none";
     draw2.style.display = "none";
     call.style.display = "none";
+    warn.style.display = "none";
 }
 
 // chat area
@@ -135,4 +136,27 @@ updateElements.forEach(function(element) {
 
 btn.addEventListener('click',()=>{
     warn.style.display = "none";
+})
+
+let mic_i = document.querySelector(".mic i");
+let mic = document.querySelector(".mic");
+let plane = document.querySelector(".plane");
+
+function change() {
+    let inputVal = document.getElementById("input-msg").value;
+
+  if (inputVal) {
+    mic_i.style.opacity = "0";
+    plane.style.opacity = "1";
+  } else {
+    mic_i.style.opacity = "1";
+    plane.style.opacity = "0"; 
+  }
+}
+
+plane.addEventListener("click",function(){
+    let inputField = document.getElementById("input-msg");
+    inputField.value = ""; 
+    mic_i.style.opacity = "1";
+    plane.style.opacity = "0"; 
 })
