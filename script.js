@@ -45,7 +45,7 @@ status_back.addEventListener('click',()=>{
 
 // bottom corner icons
 const show=()=>{
-    // alert("msg from:Prathamesh Vattamwar⚠️ Note: This is just prototype WhatsApp application.Currently is in updating phase⚠️ Now click 'OK' to continue")
+    alert("msg from:Prathamesh Vattamwar⚠️ Note: This is just prototype WhatsApp application.Currently is in updating phase⚠️ Now click 'OK' to continue")
     chat.style.display = "block";
     draw.style.display = "none";
     draw2.style.display = "none";
